@@ -95,9 +95,35 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+aside {
+  width: 20%;
+  height: 100%;
+  font-style: bold;
+  background-color: #161818;
+  position: fixed;
+  color: white;
+  padding: 10px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  top: 0;
+  bottom: 0;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+  display: flex;
+  flex-direction: column;
+
+}
+
 a {
-  color: inherit;
+  color: white;
   text-decoration: none;
+  background-color: #161717;
+  padding: 10px;
+  margin-top: 10px;
+
+}
+* {
+  box-sizing: border-box;
 }
 
 @media (prefers-color-scheme: dark) {
