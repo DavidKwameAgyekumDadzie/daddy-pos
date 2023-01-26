@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css';
-import Parent from "../components/Parent"
+import Parent from "../components/Parent";
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -15,11 +15,67 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Parent>
-        <div>
-          <h1>HELLO</h1>
+      <Parent className="flex flex-nowrap">
+        <div className="flex flex-col justify-center items-center">
+          <div className="flex flex-col  space-y-8 font-bold">
+            <div className="space-y-6">
+              <h1 className="text-4xl text-black">Today's Data</h1>
+              <div className="flex space-x-6 flex-row place-items-center">
+                <div className="p-10 bg-slate-900 text-white rounded-xl">
+                  <h1 className="text-3xl">Total Sold</h1>
+                  <h1 className="mt-2, text-2xl">$12389</h1>
+                </div>
+                <div className="p-10 bg-slate-900 text-white rounded-xl">
+                  <h1 className="text-3xl">Total Bought</h1>
+                  <h1 className="mt-2, text-2xl">$12389</h1>
+                </div>
+                <div className="p-10 bg-slate-900 text-white rounded-xl">
+                  <h1 className="text-3xl">Total Received</h1>
+                  <h1 className="mt-2, text-2xl">$12389</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-col space-y-8 font-bold">
+            <div className="space-y-6">
+              <h1 className="text-4xl text-black">In This Week</h1>
+              <div className="flex space-x-6 flex-row place-items-center">
+                <div className="p-10 bg-slate-900 text-white rounded-xl">
+                  <h1 className="text-3xl">Total Sold</h1>
+                  <h1 className="mt-2, text-2xl">$12389</h1>
+                </div>
+                <div className="p-10 bg-slate-900 text-white rounded-xl">
+                  <h1 className="text-3xl">Total Bought</h1>
+                  <h1 className="mt-2, text-2xl">$12389</h1>
+                </div>
+                <div className="p-10 bg-slate-900 text-white rounded-xl">
+                  <h1 className="text-3xl">Total Received</h1>
+                  <h1 className="mt-2, text-2xl">$12389</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-col space-y-8 mb-10 font-bold">
+            <div className="space-y-6">
+              <h1 className="text-4xl text-black">In This Month</h1>
+              <div className="flex space-x-6 flex-row place-items-center">
+                <div className="p-10 bg-slate-900 text-white rounded-xl">
+                  <h1 className="text-3xl">Total Sold</h1>
+                  <h1 className="mt-2, text-2xl">$12389</h1>
+                </div>
+                <div className="p-10 bg-slate-900 text-white rounded-xl">
+                  <h1 className="text-3xl">Total Bought</h1>
+                  <h1 className="mt-2, text-2xl">$12389</h1>
+                </div>
+                <div className="p-10 bg-slate-900 text-white rounded-xl">
+                  <h1 className="text-3xl">Total Received</h1>
+                  <h1 className="mt-2, text-2xl">$12389</h1>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </Parent>
     </>
-  )
+  );
 }
